@@ -10,6 +10,7 @@
     @else
     <a class="thumbnail" data-position="center"><h1>Masukan Min = 1 dan Max = 8</h1></a>
     @endif
+    <!-- tess  -->
     <!--
     <article>
         <a class="thumbnail" href="click-master/images/fulls/01.jpg"><img src="click-master/images/thumbs/01.jpg" alt="" /></a>
