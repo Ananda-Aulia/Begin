@@ -1,8 +1,8 @@
 <section id="thumbnails">
     @if (Request::input('note')>=1 && Request::input('note')<=8)
-        @for ($i = 0; $i < Request::input('note'); $i++)
+        @for ($i = 1; $i <= Request::input('note'); $i++)
             <article>
-                <a class="thumbnail" href="click-master/images/fulls/02.jpg" data-position="left center"><img src="click-master/images/thumbs/02.jpg" alt="" /></a>
+                <a class="thumbnail" href="click-master/images/fulls/0{{$i}}.jpg" data-position="left center"><img src="click-master/images/thumbs/0{{$i}}.jpg" alt="" /></a>
                 <h2>Masih , Mencoba , Sukses</h2>
                 <p>Mencoba berada dalam jalur</p>
             </article>
@@ -10,7 +10,6 @@
     @else
     <a class="thumbnail" data-position="center"><h1>Masukan Min = 1 dan Max = 8</h1></a>
     @endif
-    <!-- tess  -->
     <!--
     <article>
         <a class="thumbnail" href="click-master/images/fulls/01.jpg"><img src="click-master/images/thumbs/01.jpg" alt="" /></a>
